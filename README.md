@@ -1,167 +1,79 @@
-Güvenli Giriş ve Oturum Yönetimi
+# Güvenli Giriş ve Oturum Yönetimi
 
-Proje Hakkında
+React ve Flutter kullanılarak geliştirilen bu proje, web ve mobil uygulamalarda temel kimlik doğrulama ve oturum yönetimi süreçlerini örneklemek amacıyla hazırlanmıştır.
 
-Güvenli Giriş ve Oturum Yönetimi, kullanıcıların giriş yapma, oturum yönetimi ve güvenli çıkış işlemlerini örnekleyen bir projedir. Proje, web ve mobil platformlar için geliştirilmiştir.
+## Görseller 
+<table>
+  <tr>
+    <td align="center">
+      <img src="https://github.com/user-attachments/assets/690e67ee-1a9d-46ad-b29b-74ed786af454" width="220" alt="Giriş ekranı" />
+      <br />
+      <b>Giriş Ekranı</b>
+    </td>
+    <td align="center">
+      <img src="https://github.com/user-attachments/assets/159d2391-4292-4b20-8ce0-ee6f9eb05dec" width="220" alt="Kullanıcı paneli" />
+      <br />
+      <b>Kullanıcı Paneli</b>
+    </td>
+    <td align="center">
+      <img src="https://github.com/user-attachments/assets/42dbb4d8-bd14-4ad0-a314-50ca8c923c07" width="220" alt="Oturum yönetimi" />
+      <br />
+      <b>Oturum Yönetimi</b>
+    </td>
+    <td align="center">
+      <img src="https://github.com/user-attachments/assets/ee873fa2-6fdb-4506-b6e7-78284cb07dac" width="220" alt="Oturum süresi doldu ekranı" />
+      <br />
+      <b>Oturum Süresi Doldu</b>
+    </td>
+  </tr>
 
-Projenin amacı; form doğrulama, hatalı girişlerin yönetimi, oturum süresinin dolması, çıkış yapıldığında kullanıcı bilgilerinin temizlenmesi ve farklı kullanıcıların verilerinin birbirinden ayrı tutulması gibi temel kimlik doğrulama kavramlarını uygulamalı olarak göstermektir.
 
-Önemli: Bu proje eğitim ve demo amaçlıdır. Kullanıcı hesapları ve parolalar kod içerisinde tanımlanmıştır. Gerçek bir kimlik doğrulama sunucusu veya üretim ortamına uygun güvenlik altyapısı içermez.
+## Özellikler
 
+- E-posta ve parola doğrulama
+- Hatalı girişlerde genel hata mesajı
+- 5 dakika sonra otomatik oturum sonlandırma
+- Güvenli çıkış ve kullanıcı bilgilerinin temizlenmesi
+- Farklı kullanıcılar için ayrı görev ve kullanıcı verileri
 
-Kullanılan Teknolojiler
+## Kullanılan Teknolojiler
 
-Web: React, JavaScript, Vite, CSS
+- **Web:** React, JavaScript, Vite, CSS
+- **Mobil:** Flutter, Dart
+- **Sürüm Kontrolü:** Git, GitHub
 
-Mobil: Flutter, Dart
+## Test Hesapları
 
-Sürüm kontrolü: Git ve GitHub
+| Kullanıcı | E-posta | Parola |
+|---|---|---|
+| Ayşe Yılmaz | ayse@ornek.com | Deneme123! |
+| Mehmet Demir | mehmet@ornek.com | Deneme456! |
 
-📁 Proje Yapısı
+## Kurulum
 
-guvenli-giris-ve-oturum-yonetimi/
-├── web/
-│   ├── src/
-│   │   ├── App.jsx
-│   │   ├── auth.js
-│   │   ├── main.jsx
-│   │   └── index.css
-│   ├── package.json
-│   └── ...
-├── mobil/
-│   ├── lib/
-│   │   └── main.dart
-│   ├── test/
-│   ├── pubspec.yaml
-│   └── ...
-├── .gitignore
-└── README.md
+**Web uygulaması:**
 
-✨ Özellikler
-
-E-posta adresi ve parola ile giriş yapma
-
-E-posta biçimini kontrol etme
-
-En az 8 karakterlik parola doğrulaması
-
-Hatalı girişlerde genel hata mesajı gösterme
-
-Başarılı giriş sonrasında kullanıcı panelini açma
-
-Beş dakika sonra oturumu otomatik sonlandırma
-
-Kullanıcının oturumunu manuel olarak sonlandırma
-
-Çıkışta kullanıcı durumunu ve giriş formu alanlarını temizleme
-
-Farklı kullanıcıların görevlerini birbirinden ayrı gösterme
-
-Oturum süresinin dolmasını test edebilme
-
-👤 Test Hesapları
-
-Uygulamayı test etmek için aşağıdaki örnek hesaplar kullanılabilir.
-
-Kullanıcı
-
-E-posta
-
-Parola
-
-Ayşe Yılmaz
-
-ayse@ornek.com
-
-Deneme123!
-
-Mehmet Demir
-
-mehmet@ornek.com
-
-Deneme456!
-
-Bu hesaplar yalnızca yerel test amacıyla oluşturulmuştur. Gerçek kullanıcı hesapları değildir.
-
-🚀 Kurulum ve Çalıştırma
-
-1. Gereksinimler
-
-Node.js ve npm
-
-Flutter SDK ve Dart
-
-Android Studio, VS Code veya tercih edilen bir geliştirme ortamı
-
-Git (isteğe bağlı, sürüm kontrolü için)
-
-2. Web uygulamasını çalıştırma
-
-Terminalde proje klasörünün içindeki web dizinine gir:
-
+```bash
 cd web
 npm install
 npm run dev
+```
 
-Terminalde gösterilen yerel adresi tarayıcıda aç. Vite genellikle http://localhost:5173 adresini kullanır.
+**Mobil uygulama:**
 
-3. Mobil uygulamayı çalıştırma
-
-Yeni bir terminal aç ve mobil dizinine gir:
-
+```bash
 cd mobil
 flutter pub get
-flutter analyze
 flutter run
+```
 
-Çalıştırmadan önce bir Android emülatörü veya desteklenen bir cihaz başlat. Kullanılabilir cihazları görmek için:
+## Test Senaryoları
 
-flutter devices
+- Doğru ve yanlış giriş bilgilerini deneme
+- Oturum süresinin dolmasını test etme
+- Çıkış yaptıktan sonra farklı kullanıcıyla giriş yapma
+- Kullanıcı verilerinin hesaplar arasında karışmadığını kontrol etme
 
-🧪 Test Senaryoları
+## Önemli Not
 
-Ayşe hesabıyla giriş yap ve yalnızca Ayşe'ye ait görevlerin gösterildiğini doğrula.
-
-Çıkış yap ve giriş ekranına dönüldüğünü kontrol et.
-
-Mehmet hesabıyla giriş yap ve yalnızca Mehmet'e ait görevlerin gösterildiğini doğrula.
-
-Yanlış e-posta veya parola ile giriş yap ve genel hata mesajını kontrol et.
-
-Parola alanına 8 karakterden kısa bir değer girerek doğrulama mesajını kontrol et.
-
-Oturum süresini dolmuş gibi gösteren test seçeneğini kullan ve giriş ekranına dönüldüğünü doğrula.
-
-Oturum kapandıktan sonra önceki kullanıcının bilgilerinin yeni kullanıcıya ait panelde görünmediğini kontrol et.
-
-🔐 Güvenlik Yaklaşımı
-
-Bu proje temel oturum yönetimi davranışlarını göstermek üzere hazırlanmıştır:
-
-Hatalı girişlerde e-posta adresinin sistemde bulunup bulunmadığını açıklamayan genel bir hata mesajı kullanılır.
-
-Oturum sona erdiğinde etkin kullanıcı durumu temizlenir.
-
-Parolalar kullanıcı panelinde gösterilmez.
-
-Kullanıcıya ait örnek görevler, giriş yapılan test hesabına göre gösterilir.
-
-Üretim ortamı için: Gerçek bir uygulamada kimlik doğrulama sunucu tarafında yapılmalı; parolalar güvenli parola özetleme algoritmalarıyla saklanmalı; oturum veya erişim belirteçleri güvenli biçimde yönetilmeli ve yetkilendirme sunucu tarafında doğrulanmalıdır. İstemci tarafındaki bu örnek tek başına gerçek güvenlik sağlamaz.
-
-📌 Bilinen Sınırlamalar
-
-Test hesapları ve örnek veriler uygulama kodunda tutulur.
-
-Gerçek bir veritabanı veya kimlik doğrulama API'si kullanılmaz.
-
-Oturum zamanlayıcısı uygulama çalışırken bellekte tutulur; kalıcı ve sunucu tarafından doğrulanan bir oturum değildir.
-
-Sayfa veya uygulama yeniden başlatıldığında oturum durumu kalıcı olarak korunmaz.
-
-🎯 Projenin Amacı
-
-Bu proje; React ve Flutter ile form doğrulama, durum yönetimi, oturum süresi kontrolü ve kullanıcı verilerinin oturumlar arasında ayrıştırılması konularında pratik deneyim kazanmak amacıyla geliştirilmiştir.
-
-📄 Lisans
-
-Bu proje eğitim ve öğrenme amacıyla hazırlanmıştır. Projeyi kullanmadan veya dağıtmadan önce uygun bir lisans ekleyebilirsiniz.
+Bu proje eğitim ve test amaçlıdır. Kullanıcı hesapları örnektir; gerçek bir sunucu tabanlı kimlik doğrulama sistemi içermez. Üretim ortamında kullanıma uygun değildir.
