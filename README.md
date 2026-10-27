@@ -6,28 +6,24 @@ React ve Flutter kullanılarak geliştirilen bu proje, web ve mobil uygulamalard
 <table>
   <tr>
     <td align="center">
-      <img src="https://github.com/user-attachments/assets/690e67ee-1a9d-46ad-b29b-74ed786af454" width="220" alt="Giriş ekranı" />
-      <br />
-      <b>Giriş Ekranı</b>
+      <img src="https://github.com/user-attachments/assets/690e67ee-1a9d-46ad-b29b-74ed786af454" width="180" alt="Giriş ekranı" />
+      <br /><b>Giriş Ekranı</b>
     </td>
     <td align="center">
-      <img src="https://github.com/user-attachments/assets/159d2391-4292-4b20-8ce0-ee6f9eb05dec" width="220" alt="Kullanıcı paneli" />
-      <br />
-      <b>Kullanıcı Paneli</b>
+      <img src="https://github.com/user-attachments/assets/159d2391-4292-4b20-8ce0-ee6f9eb05dec" width="180" alt="Kullanıcı paneli" />
+      <br /><b>Kullanıcı Paneli</b>
     </td>
     <td align="center">
-      <img src="https://github.com/user-attachments/assets/42dbb4d8-bd14-4ad0-a314-50ca8c923c07" width="220" alt="Oturum yönetimi" />
-      <br />
-      <b>Oturum Yönetimi</b>
+      <img src="https://github.com/user-attachments/assets/42dbb4d8-bd14-4ad0-a314-50ca8c923c07" width="180" alt="Oturum yönetimi" />
+      <br /><b>Oturum Yönetimi</b>
     </td>
     <td align="center">
-      <img src="https://github.com/user-attachments/assets/ee873fa2-6fdb-4506-b6e7-78284cb07dac" width="220" alt="Oturum süresi doldu ekranı" />
-      <br />
-      <b>Oturum Süresi Doldu</b>
+      <img src="https://github.com/user-attachments/assets/ee873fa2-6fdb-4506-b6e7-78284cb07dac" width="180" alt="Oturum süresi doldu ekranı" />
+      <br /><b>Oturum Süresi Doldu</b>
     </td>
   </tr>
+</table>
 
-  
 ## Özellikler
 
 - E-posta ve parola doğrulama
