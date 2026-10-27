@@ -26,8 +26,6 @@ React ve Flutter kullanılarak geliştirilen bu proje, web ve mobil uygulamalard
       <b>Oturum Süresi Doldu</b>
     </td>
   </tr>
-
-
 ## Özellikler
 
 - E-posta ve parola doğrulama
